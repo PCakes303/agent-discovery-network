@@ -34,7 +34,7 @@ A trusted issuer may still publish false or stale claims. A valid signature prov
 
 ## Expiry
 
-The initial maximum record lifetime is configurable and defaults to 24 hours. Records are rejected when expired, issued in the future, or longer-lived than the configured maximum. Production deployments must define clock-skew tolerance, renewal behavior, revocation and retention semantics.
+The initial maximum record lifetime is configurable and defaults to 24 hours. Record identifier, subject, issuer, endpoint, provenance and signature strings have fixed upper bounds; capability collections and individual capability identifiers are bounded. Registry capacity is bounded and capacity exhaustion rejects publication. Records are rejected when expired, issued in the future, or longer-lived than the configured maximum. Production deployments must define clock-skew tolerance, renewal behavior, revocation and retention semantics.
 
 ## Storage and federation
 
