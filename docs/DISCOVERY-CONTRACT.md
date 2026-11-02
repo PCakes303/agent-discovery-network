@@ -22,7 +22,7 @@ The initial dataclass is a local experimental contract. It is not yet bound to t
 
 ## Publish requirements
 
-A publisher must validate record structure and lifetime, verify the signature using an approved cryptographic profile, and evaluate issuer trust. The scaffold represents signature and trust checks as injected callbacks; it does not implement cryptography or identity lifecycle.
+A publisher must validate record structure and lifetime, verify the signature using an approved cryptographic profile, and evaluate issuer trust. The scaffold represents signature and trust checks as injected callbacks; only explicit boolean `True` accepts a record. It does not implement cryptography or identity lifecycle.
 
 ## Query requirements
 
