@@ -11,7 +11,7 @@ The public remote exists and is authoritative for current implementation. The hi
 
 ## Remediation in progress
 
-The discovery record validator now bounds identifiers, endpoint, provenance, signature and capability collections; rejects malformed endpoint URLs and non-finite/boolean timestamps; and requires finite positive lifetime configuration. The registry validates finite clock/configuration values and accepts only explicit boolean `True` from verifier and trust callbacks.
+The discovery record validator now bounds identifiers, endpoint, provenance, signature and capability collections; rejects malformed endpoint URLs, non-finite/boolean and overflowing timestamps, and invalid lifetime configuration. The registry safely rejects overflowing clock/configuration values and accepts only explicit boolean `True` from verifier and trust callbacks.
 
 ## Remaining verification
 
